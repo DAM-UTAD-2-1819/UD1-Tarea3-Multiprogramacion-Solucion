@@ -1,16 +1,20 @@
 package Hijo;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.concurrent.ThreadLocalRandom;
+import java.io.InputStreamReader;
 
 public class Aleatorios {
 
-	public static int generateRandomNumber(int min, int max) {
-		int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-		return randomNum;
-	}
-
 	public static void main(String[] args) throws IOException {
-		generateRandomNumber(0, 10);
+		int randomNum;
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String st = null;
+		st = in.readLine();
+		while (!st.equals("")) {
+			randomNum = (int) Math.floor(Math.random() * (10 - 0 + 1) + (0));
+			System.out.println(randomNum);
+			st = in.readLine();
+		}
 	}
 }
