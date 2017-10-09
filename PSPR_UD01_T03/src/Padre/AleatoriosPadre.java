@@ -24,11 +24,9 @@ public class AleatoriosPadre {
 				System.out.println(brHijo.readLine());
 				stPadre = brPadre.readLine();
 			}
-
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 }
