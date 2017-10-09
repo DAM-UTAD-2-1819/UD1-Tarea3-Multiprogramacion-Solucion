@@ -1,3 +1,6 @@
+package Hijo;
+
+import java.io.IOException;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Aleatorios {
@@ -7,8 +10,7 @@ public class Aleatorios {
 		return randomNum;
 	}
 
-	public static void main(String[] args) {
-		generateRandomNumber(2, 4);
-		System.out.println(generateRandomNumber(0, 10));
+	public static void main(String[] args) throws IOException {
+		generateRandomNumber(0, 10);
 	}
 }
