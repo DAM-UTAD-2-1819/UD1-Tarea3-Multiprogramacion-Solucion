@@ -20,8 +20,7 @@ public class AleatoriosPadre {
 		while (!stPadre.equals("fin")) {
 			pwHijo.println(stPadre);
 			pwHijo.flush();
-			String st2 = brHijo.readLine();
-			System.out.println(st2);
+			System.out.println(brHijo.readLine());
 			stPadre = brPadre.readLine();
 		}
 	}
