@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 
 public class MayusculasPadre {
 	public static void main(String[] args) throws IOException {
+		String x = null;
+		while(x != "fin"){
 		ProcessBuilder pb = new ProcessBuilder("java", "-jar", "./lib/Mayusculas.jar");
 		Process pc = pb.start();
 
@@ -17,11 +19,14 @@ public class MayusculasPadre {
 
 		String stPadre = brPadre.readLine();
 
-		while (!stPadre.equals("fin")) {
+		if (!stPadre.equals("fin")) {
 			pwHijo.println(stPadre);
 			pwHijo.flush();
 			System.out.println(brHijo.readLine());
-			stPadre = brPadre.readLine();
+			
+		} if (stPadre.equals("fin")) {
+			x = "fin";
 		}
 	}
+}
 }
