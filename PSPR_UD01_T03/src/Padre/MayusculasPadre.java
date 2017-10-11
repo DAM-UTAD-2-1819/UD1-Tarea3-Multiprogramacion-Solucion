@@ -23,7 +23,7 @@ public class MayusculasPadre {
 				String st2 = brHijo.readLine();
 				System.out.println(st2);
 				stPadre = brPadre.readLine();
-			}
+			} 
 		}
 	
 }
